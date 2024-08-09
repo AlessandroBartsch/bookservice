@@ -23,6 +23,8 @@ public class BookController {
     @Autowired
     private Environment environment;
 
+    private String lara = "";
+
     @Autowired
     private BookRepository bookRepository;
 
