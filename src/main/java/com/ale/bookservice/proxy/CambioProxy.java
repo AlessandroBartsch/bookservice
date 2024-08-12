@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.math.BigDecimal;
 
-@FeignClient(name = "cambio-service", url = "localhost:8000")
+@FeignClient(name = "cambioservice")
 public interface CambioProxy {
 
-    @GetMapping(value = "/cambio-service/{amount}/{from}/{to}")
+    @GetMapping(value = "/cambioservice/{amount}/{from}/{to}")
     public Cambio getCambio(
             @PathVariable("amount") Double amount,
             @PathVariable("from") String from,
