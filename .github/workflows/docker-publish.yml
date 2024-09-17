@@ -23,6 +23,9 @@ jobs:
           java-version: '17'
           distribution:  'adopt'
 
+      - name: Clone naming-server repository
+        run: git clone https://github.com/AlessandroBartsch/naming-server.git
+
       - name: Change directory to naming-server
         run: cd naming-server
 
